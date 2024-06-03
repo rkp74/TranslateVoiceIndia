@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Results - Translate Voice India</title>
+</head>
+<body>
+    <header>
+        <h1>Survey Results</h1>
+        <nav class="navbar">
+            <ul>
+              <li class="logo"><a href="index.html"> <img src="logo.jpg" alt="TVC" height="50px" width="50px" /></a> </li>
+              <li><a href="youtube.html">YouTube</a></li>
+      
+              <li><a href="blog.html">Blog<i class="fas fa-angle-down"></i> </a></li>
+      
+              <li><a href="survey.html">Survey <i class="fas fa-angle-down"></i> </a>
+            </li>
+              
+              <li><a href="about.html">About Us</a>
+                 <ul>
+                     <li><a href="aim.html">Our Aim</a></li>
+                  <li><a href="team.html">Our Team</a></li>
+                  <li><a href="contactus.html">Contact Us</a></li>
+      
+                </ul>
+            </li>
+               
+              </ul> 
+          </nav>
+    </header>
+    <main>
+        <form action="submit_survey.php" method="post">
+            <label for="language">Preferred Language:</label>
+            <select name="language" id="language">
+                <option value="Hindi">Hindi</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Bengali">Bengali</option>
+                <option value="Marathi">Marathi</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        <canvas id="languageChart" width="300" height="300"></canvas>
+    </main>
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Script for drawing the graph -->
+    <script src="survey.js"></script>
+</body>
+</html>
+

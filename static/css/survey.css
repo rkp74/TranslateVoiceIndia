@@ -1,0 +1,15 @@
+
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Adjust graph size */
+canvas#languageChart {
+    max-width: 100%;
+    height: auto;
+}
+
